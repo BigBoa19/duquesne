@@ -31,15 +31,21 @@
       
         <div class="horizontal-container">
           <div class="vertical-container">
-            <p class="paragraph">
-              Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding
-                one of the few remaining inclines in the country. <br /><br />Opened on May 20, 1877, the Duquesne Incline was
-                rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its
-                original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery
-                while it operates. <br /><br />The Duquesne Incline&#39;s upper station houses a museum of Pittsburgh history,
-                including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh
-                souvenirs, maps and photos can be found at the gift shop.
-            </p>
+              <p class="paragraph" id="short-intro">
+                Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding
+                  one of the few remaining inclines in the country.
+              </p>
+              <p class="paragraph" id="long-intro">
+                Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding
+                  one of the few remaining inclines in the country. <br /><br />Opened on May 20, 1877, the Duquesne Incline was
+                  rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its
+                  original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery
+                  while it operates. <br /><br />The Duquesne Incline&#39;s upper station houses a museum of Pittsburgh history,
+                  including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh
+                  souvenirs, maps and photos can be found at the gift shop.
+              </p>
+            <button id="read-more">Read More</button>
+            <button id="read-less">Read Less</button>
             <div class="video-map">
               <h2>Informational Video</h2>
               <iframe width="420" height="315" src="https://www.youtube.com/embed/ve3KMUIlSGk?si=1KRYPixoGFu8UeKJ"></iframe>
@@ -102,19 +108,20 @@
       <div>
         <p>Subscribe to our Mailing List</p>
         <div class="horizontal-container">
-          <input placeholder="Name" type="name" />
-          <input placeholder="Email address" type="email" />
+          <input placeholder="Name" id="name" type="name" required/>
+          <input placeholder="Email address" id="email" type="email" required/>
         </div>
         <div class="horizontal-container">
-          <input placeholder="Phone" type="phone" />
-          <input placeholder="Zip Code" type="zip" />
+          <input placeholder="Phone" id="phone" type="phone"/>
+          <input placeholder="Zip Code" id="zip" type="zip"/>
         </div>
         <div style="display: flex; align-items: center; gap: 4px;">
           <input type="checkbox" id="sms-checkbox" name="sms">
           <p style="display: inline-block; margin: 0;">I would like to receive messages via SMS text</p>
         </div>
         
-        <button>Subscribe</button>
+        <button onclick="validate()">Subscribe</button>
+        <p id="validity-msg"></p>
       </div>
     </footer>
   </body>

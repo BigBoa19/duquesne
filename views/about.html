@@ -71,19 +71,20 @@ At the time of its public opening, it was one of four inclined planes serving th
       <div>
         <p>Subscribe to our Mailing List</p>
         <div class="horizontal-container">
-          <input placeholder="Name" type="name" />
-          <input placeholder="Email address" type="email" />
+          <input placeholder="Name" id="name" type="name" required/>
+          <input placeholder="Email address" id="email" type="email" required/>
         </div>
         <div class="horizontal-container">
-          <input placeholder="Phone" type="phone" />
-          <input placeholder="Zip Code" type="zip" />
+          <input placeholder="Phone" id="phone" type="phone"/>
+          <input placeholder="Zip Code" id="zip" type="zip"/>
         </div>
         <div style="display: flex; align-items: center; gap: 4px;">
           <input type="checkbox" id="sms-checkbox" name="sms">
           <p style="display: inline-block; margin: 0;">I would like to receive messages via SMS text</p>
         </div>
         
-        <button>Subscribe</button>
+        <button onclick="validate()">Subscribe</button>
+        <p id="validity-msg"></p>
       </div>
     </footer>
   </body>

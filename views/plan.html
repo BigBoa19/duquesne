@@ -41,23 +41,97 @@
           <a href="#field-trips" class="subnav-link">Field Trips</a>
           <a href="#city-tours" class="subnav-link">City Tours</a>
         </nav>
-    
+
         <section id="fares" class="subnav-content">
           <h3>Fares</h3>
-          <p>Details about fares go here.</p>
+          <table>
+            <tr class="paragraph">
+              <td>Adults (Ages 12-64)</td>
+              <td>$2.50 Each Way or $5.00 Round Trip</td>
+            </tr>
+            <tr class="paragraph">
+              <td>Children (Ages 6-11)</td>
+              <td>$1.25 Each Way or $2.50 Round Trip</td>
+            </tr>
+            <tr class="paragraph">
+              <td>Children 5 and Under</td>
+              <td>Free</td>
+            </tr>
+            <tr class="paragraph">
+              <td>University students with proper ID</td>
+              <td>Free</td>
+            </tr>
+          </table>
+          <hr class="line" />
         </section>
-        <section id="group-rates" class="subnav-content" style="display: none;">
+        <section id="group-rates" class="subnav-content" style="display: none">
           <h3>Group Rates</h3>
-          <p>Details about group rates go here.</p>
+          <p class="paragraph">
+            *Group Rates are Valid for Any Group of 10 or More People<br />
+          </p>
+          <table>
+            <tr class="paragraph">
+              <td>Adults (Ages 12-64)</td>
+              <td>$1.75 Each Way or $3.50 Round Trip</td>
+            </tr>
+            <tr class="paragraph">
+              <td>Children (Ages 6-11)</td>
+              <td>$1.00 Each Way or $1.75 Round Trip</td>
+            </tr>
+            </tr>
+          </table>
+          <hr class="line" />
         </section>
-        <section id="field-trips" class="subnav-content" style="display: none;">
+        <section id="field-trips" class="subnav-content" style="display: none">
           <h3>Field Trips</h3>
-          <p>Details about field trips go here.</p>
+          <p class="paragraph">
+            A free field trip program is available for students and youth groups
+            of ten or more daily – except Saturdays and Sundays after 12:00 noon
+            due to weekend crowds and limited space. The program includes:
+          </p>
+          <ul>
+            <li style="font-weight: bold">
+              A teacher's lesson packet for students' specific grade level
+            </li>
+            <li style="font-weight: bold">
+              A round trip ride on the Duquesne Incline
+            </li>
+            <li style="font-weight: bold">
+              A history of inclines in Pittsburgh
+            </li>
+            <li style="font-weight: bold">
+              A discussion about Pittsburgh's industrial past
+            </li>
+            <li style="font-weight: bold">
+              A visit to the machine room to observe the original hoisting
+              equipment in operation and learn about the engineers who built it
+            </li>
+            <li style="font-weight: bold">
+              A panoramic view of Downtown Pittsburgh and The North Shore from
+              our observation deck 400 feet above the three rivers
+            </li>
+            <li style="font-weight: bold">
+              A brief history of the French and Indian War from which the city
+              arose
+            </li>
+          </ul>
+          <hr class="line" />
         </section>
-        <section id="city-tours" class="subnav-content" style="display: none;">
+        <section id="city-tours" class="subnav-content" style="display: none">
           <h3>City Tours</h3>
-          <p>Details about city tours go here.</p>
+          <ul>
+            <li style="font-weight: bold">
+              Pittsburgh Tours and More - Pittsburgh Movie Locations, Sports,
+              Breweries, Wineries and More.
+            </li>
+            <li style="font-weight: bold">Molly’s Trolleys</li>
+            <li style="font-weight: bold">Rivers of Steel</li>
+            <li style="font-weight: bold">The Pittsburgh Tour Company</li>
+          </ul>
+          <hr class="line" />
         </section>
+        <h2 style="text-align: left;">Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13016.899742809755!2d-80.02214353594619!3d40.43654779297911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af9e6ab935%3A0xe871d2bbc2032b83!2sDuquesne%20Incline!5e1!3m2!1sen!2sus!4v1743269914132!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </main>
 
@@ -80,21 +154,20 @@
       <div>
         <p>Subscribe to our Mailing List</p>
         <div class="horizontal-container">
-          <input placeholder="Name" type="name" />
-          <input placeholder="Email address" type="email" />
+          <input placeholder="Name" id="name" type="name" required/>
+          <input placeholder="Email address" id="email" type="email" required/>
         </div>
         <div class="horizontal-container">
-          <input placeholder="Phone" type="phone" />
-          <input placeholder="Zip Code" type="zip" />
+          <input placeholder="Phone" id="phone" type="phone"/>
+          <input placeholder="Zip Code" id="zip" type="zip"/>
         </div>
-        <div style="display: flex; align-items: center; gap: 4px">
-          <input type="checkbox" id="sms-checkbox" name="sms" />
-          <p style="display: inline-block; margin: 0">
-            I would like to receive messages via SMS text
-          </p>
+        <div style="display: flex; align-items: center; gap: 4px;">
+          <input type="checkbox" id="sms-checkbox" name="sms">
+          <p style="display: inline-block; margin: 0;">I would like to receive messages via SMS text</p>
         </div>
-
-        <button>Subscribe</button>
+        
+        <button onclick="validate()">Subscribe</button>
+        <p id="validity-msg"></p>
       </div>
     </footer>
   </body>
