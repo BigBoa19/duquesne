@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="../static/script.js"></script>
+    <title>Duquesne Incline</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img src="../static/DuqInclineLogo.png" alt="Duquesne Incline Logo" />
+      </div>
+      <h1 class="heading">Duquesne Incline</h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./plan.html">Plan your trip</a>
+        <a href="./about.html">About</a>
+        <a href="./gift.html">Gift Shop</a>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="container">
+        <div class="horizontal-container2">
+          <h1 class="Title">Plan your trip</h1>
+          <h2 class="open-msg">Open every day from 6:30 a.m. to 12:30 a.m.</h2>
+        </div>
+
+        <nav class="subnav">
+          <a href="#fares" class="subnav-link active">Fares</a>
+          <a href="#group-rates" class="subnav-link">Group Rates</a>
+          <a href="#field-trips" class="subnav-link">Field Trips</a>
+          <a href="#city-tours" class="subnav-link">City Tours</a>
+        </nav>
+    
+        <section id="fares" class="subnav-content">
+          <h3>Fares</h3>
+          <p>Details about fares go here.</p>
+        </section>
+        <section id="group-rates" class="subnav-content" style="display: none;">
+          <h3>Group Rates</h3>
+          <p>Details about group rates go here.</p>
+        </section>
+        <section id="field-trips" class="subnav-content" style="display: none;">
+          <h3>Field Trips</h3>
+          <p>Details about field trips go here.</p>
+        </section>
+        <section id="city-tours" class="subnav-content" style="display: none;">
+          <h3>City Tours</h3>
+          <p>Details about city tours go here.</p>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-UI">
+      <div>
+        <p>Contact Information</p>
+        <p>1197 West Carson Street, Pittsburgh, PA 15219</p>
+        <p>Phone Number: 412.381.1665</p>
+        <p>Fax: 412.381.1943</p>
+        <p>duq.incline@duquesneincline.org</p>
+      </div>
+      <div>
+        <p>Pages</p>
+        <p><a href="../index.html">Home</a></p>
+        <p><a href="./plan.html">Plan your trip</a></p>
+        <p><a href="./about.html">About</a></p>
+        <p><a href="./gift.html">Gift Shop</a></p>
+      </div>
+      <div>
+        <p>Subscribe to our Mailing List</p>
+        <div class="horizontal-container">
+          <input placeholder="Name" type="name" />
+          <input placeholder="Email address" type="email" />
+        </div>
+        <div class="horizontal-container">
+          <input placeholder="Phone" type="phone" />
+          <input placeholder="Zip Code" type="zip" />
+        </div>
+        <div style="display: flex; align-items: center; gap: 4px">
+          <input type="checkbox" id="sms-checkbox" name="sms" />
+          <p style="display: inline-block; margin: 0">
+            I would like to receive messages via SMS text
+          </p>
+        </div>
+
+        <button>Subscribe</button>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Big Shoulders', sans-serif;
+  background-color: #F1F2EB;
+  color: #4A4A48;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img1 {
+  height: 400px;
+  max-width: none;
+}
+
+.map-link {
+  display: inline-block;
+}
+
+.map-img {
+  width: 400px;
+  height: auto;
+}
+
+.container {
+  width: 95vw;
+  margin: 0 auto;
+  padding: 2vw;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+
+.horizontal-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.horizontal-container2 {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.open-msg {
+  padding: 10px;
+  font-weight: bold;
+  font-size: xx-large;
+  text-decoration: underline;
+  animation: colors 2s infinite;
+}
+
+@keyframes colors {
+  0% {
+    color: #566246;;
+  }
+  50% {
+    color: #A4C2A5;
+  }
+  100% {
+    color: #566246;
+  }
+}
+
+.vertical-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #A4C2A5;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding-bottom: 80px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 200px;
+  margin-right: 10px;
+}
+
+header nav {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: x-large;
+  color: #4A4A48;
+  transition: color 0.2s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+header nav a:hover {
+  color: #566246;
+}
+
+
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.Title {
+  font-size: 3rem;
+}
+
+.video-map {
+  text-align: left;
+}
+
+h1, h2, h3 {
+  font-family: 'Big Shoulders', sans-serif;
+  color: #566246;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-weight: bold;
+  font-size: large;
+}
+
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+}
+
+.carousel-slide img {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+}
+
+header .active {
+  font-weight: bold;
+  border-bottom: 3px solid #566246;
+  padding-bottom: 3px;
+}
+
+button {
+  background-color: #566246;
+  color: #F1F2EB;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.plan-trip {
+  font-size: x-large;
+  padding: 30px 70px;
+}
+
+button:hover {
+  background-color: #4A4A48; 
+}
+
+.get-directions {
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: #9ca086;
+  padding: 10px;
+}
+
+.get-directions p {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 10px;
+  color: #4A4A48;
+}
+
+.get-directions input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #4A4A48;
+  border-radius: 4px;
+  background-color: #F1F2EB;
+}
+
+.get-directions button {
+  background-color: #566246;
+  color: #F1F2EB;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.get-directions button:hover {
+  background-color: #4A4A48; 
+}
+
+.gift-container {
+  margin-bottom: 20px;
+}
+
+.footer-UI {
+  background-color: #A4C2A5;
+  color: #4A4A48;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-UI > div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-UI p:first-child {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.footer-UI input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: #F1F2EB;
+  color: #4A4A48;
+}
+
+.footer-UI input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}

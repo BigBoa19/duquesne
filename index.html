@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="./static/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>Duquesne Incline</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img src="./static/DuqInclineLogo.png" alt="Duquesne Incline Logo" />
+      </div>
+      <h1 class="heading">Duquesne Incline</h1>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./views/plan.html">Plan your trip</a>
+        <a href="./views/about.html">About</a>
+        <a href="./views/gift.html">Gift Shop</a>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="container">
+        <h1 class="Title">Home</h1>
+      
+        <div class="horizontal-container">
+          <div class="vertical-container">
+            <p class="paragraph">
+              Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding
+                one of the few remaining inclines in the country. <br /><br />Opened on May 20, 1877, the Duquesne Incline was
+                rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its
+                original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery
+                while it operates. <br /><br />The Duquesne Incline&#39;s upper station houses a museum of Pittsburgh history,
+                including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh
+                souvenirs, maps and photos can be found at the gift shop.
+            </p>
+            <div class="video-map">
+              <h2>Informational Video</h2>
+              <iframe width="420" height="315" src="https://www.youtube.com/embed/ve3KMUIlSGk?si=1KRYPixoGFu8UeKJ"></iframe>
+            </div>
+            <div class="video-map">
+              <h2>Duquesne Incline Map</h2>
+              <a class="map-link" target="_blank" rel="noopener noreferrer" href="https://www.duquesneincline.org/uploads/images/Map/DuquesneIncline%20map%20only.pdf">
+                <img class="map-img" src="./static/map.png" alt="Map" />
+              </a>
+            </div> 
+          </div>
+
+          <div class="vertical-container">
+            <div class="carousel-container">
+              <div class="carousel">
+                  <div class="carousel-slide">
+                    <img src="./static/duquesne.jpg" alt="Duquesne Incline 1" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="./static/duquesne2.jpg" alt="Duquesne Incline 2"/>
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="./static/duquesne3.jpg" alt="Duquesne Incline 3"/>
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="./static/duquesne4.jpg" alt="Duquesne Incline 4"/>
+                </div>
+              </div>
+          </div>
+            <h2>1197 West Carson Street, Pittsburgh, PA 15219</h2>
+            <div>
+              <button onclick="window.location.href='./views/plan.html'" class="plan-trip">Plan your trip today!</button>
+              <div class="get-directions">
+                <p>Get Directions</p>
+                <input placeholder="Enter Location" type="email" />
+                <button>Directions</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-UI">
+      <div>
+        <p>Contact Information</p>
+        <p>1197 West Carson Street, Pittsburgh, PA 15219</p>
+        <p>Phone Number: 412.381.1665</p>
+        <p>Fax: 412.381.1943</p>
+        <p>duq.incline@duquesneincline.org</p>
+      </div>
+      <div>
+        <p>Pages</p>
+        <p><a href="./index.html">Home</a></p>
+        <p><a href="./views/plan.html">Plan your trip</a></p>
+        <p><a href="./views/about.html">About</a></p>
+        <p><a href="./views/gift.html">Gift Shop</a></p>
+      </div>
+      <div>
+        <p>Subscribe to our Mailing List</p>
+        <div class="horizontal-container">
+          <input placeholder="Name" type="name" />
+          <input placeholder="Email address" type="email" />
+        </div>
+        <div class="horizontal-container">
+          <input placeholder="Phone" type="phone" />
+          <input placeholder="Zip Code" type="zip" />
+        </div>
+        <div style="display: flex; align-items: center; gap: 4px;">
+          <input type="checkbox" id="sms-checkbox" name="sms">
+          <p style="display: inline-block; margin: 0;">I would like to receive messages via SMS text</p>
+        </div>
+        
+        <button>Subscribe</button>
+      </div>
+    </footer>
+  </body>
+  
+</html>
