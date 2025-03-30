@@ -107,3 +107,19 @@ function validate() {
         }, 2000);
     }
 }
+
+async function getWeather() {
+    const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=40.4406&longitude=-79.9959&daily=rain_sum&current=rain&forecast_days=1&temperature_unit=fahrenheit");
+    const data = await response.json();
+    const rain = data.daily.rain_sum;
+    console.log("rain: " + rain);
+
+    if(rain > 0){
+        document.getElementById("weather-msg").innerHTML = "Chance of rain today, bring an umbrella!";
+    }
+    else{
+        document.getElementById("weather-msg").innerHTML = "No rain today, come enjoy the sunshine!";
+    }
+    document.getElementById("weather-btn").style.display = "none";
+
+}

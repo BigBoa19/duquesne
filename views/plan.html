@@ -40,6 +40,7 @@
           <a href="#group-rates" class="subnav-link">Group Rates</a>
           <a href="#field-trips" class="subnav-link">Field Trips</a>
           <a href="#city-tours" class="subnav-link">City Tours</a>
+          <a href="#weather" class="subnav-link">Weather</a>
         </nav>
 
         <section id="fares" class="subnav-content">
@@ -62,7 +63,6 @@
               <td>Free</td>
             </tr>
           </table>
-          <hr class="line" />
         </section>
         <section id="group-rates" class="subnav-content" style="display: none">
           <h3>Group Rates</h3>
@@ -80,7 +80,6 @@
             </tr>
             </tr>
           </table>
-          <hr class="line" />
         </section>
         <section id="field-trips" class="subnav-content" style="display: none">
           <h3>Field Trips</h3>
@@ -115,7 +114,6 @@
               arose
             </li>
           </ul>
-          <hr class="line" />
         </section>
         <section id="city-tours" class="subnav-content" style="display: none">
           <h3>City Tours</h3>
@@ -128,10 +126,12 @@
             <li style="font-weight: bold">Rivers of Steel</li>
             <li style="font-weight: bold">The Pittsburgh Tour Company</li>
           </ul>
-          <hr class="line" />
         </section>
-        <h2 style="text-align: left;">Find Us</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13016.899742809755!2d-80.02214353594619!3d40.43654779297911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af9e6ab935%3A0xe871d2bbc2032b83!2sDuquesne%20Incline!5e1!3m2!1sen!2sus!4v1743269914132!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="weather" class="subnav-content" style="display: none">
+          <h3>Weather</h3>
+          <button id="weather-btn" onclick="getWeather()">Check Weather</button>
+          <h2 id="weather-msg"></h2>
+        </section>
       </div>
     </main>
 
