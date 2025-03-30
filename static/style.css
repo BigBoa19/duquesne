@@ -22,6 +22,14 @@ img {
   max-width: none;
 }
 
+.link {
+  color: #0000FF;
+}
+
+.left-align {
+  text-align: left;
+}
+
 .map-link {
   display: inline-block;
 }
@@ -315,4 +323,24 @@ button:hover {
   width: auto;
   padding: 0;
   margin: 0;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center; 
+  gap: 4px;
+}
+
+.checkbox-container p {
+  display: inline-block;
+  margin: 0;
+}
+
+.fb-size {
+  width: 40px;
+  height: 40px;
+}
+
+.display-none {
+  display: none;
 }
