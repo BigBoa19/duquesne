@@ -20,11 +20,10 @@ $(document).ready(function() {
 
 links = Array.from(document.querySelectorAll('a'));
 
-links.forEach(element => {
-    console.log(element.href);
-    console.log(window.location.pathname);
-    if(element.href.includes(window.location.pathname)){
-        element.classList.add('active');
+links.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
+    if (linkPath === currentPath) {
+        link.classList.add('active');
     }
 });
 
