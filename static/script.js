@@ -1,3 +1,4 @@
+//jquery for carousel
 $(document).ready(function() {
     const $carousel = $(".carousel");
     const $slides = $(".carousel-slide");
@@ -18,6 +19,25 @@ $(document).ready(function() {
     }, 3000);
 });
 
+$(document).ready(function() {
+    const $slides = $(".carousel-slide2");
+    let currentIndex = 0;
+  
+    // Initially display the first slide.
+    $slides.hide().eq(currentIndex).show();
+  
+    setInterval(function() {
+      // Fade out the current slide.
+      $slides.eq(currentIndex).fadeOut(600, function() {
+        // Update index: if at the last slide, start from the beginning.
+        currentIndex = (currentIndex + 1) % $slides.length;
+        // Fade in the next slide.
+        $slides.eq(currentIndex).fadeIn(600);
+      });
+    }, 3000);
+  });
+
+//javascript for active links
 links = Array.from(document.querySelectorAll('a'));
 
 links.forEach(element => {
@@ -26,6 +46,7 @@ links.forEach(element => {
     }
 });
 
+//jquery for subnav
 $(document).ready(function() {
     $('.subnav-link').removeClass('active');
     $('.subnav-link:first').addClass('active');
@@ -42,6 +63,7 @@ $(document).ready(function() {
     });
 });
   
+//jquery for read more/less button
 if(window.location.pathname.endsWith("index.html")){
     $(document).ready(function(){
         $("#read-more").click(function(){
@@ -59,6 +81,7 @@ if(window.location.pathname.endsWith("index.html")){
     });
 }
 
+//Form validation function
 function validate() {
     let name = document.getElementById("name");
     let email = document.getElementById("email");
@@ -106,6 +129,7 @@ function validate() {
     }
 }
 
+//API Call for weather
 async function getWeather() {
     // Get weather data from Open-Meteo API
     const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=40.4406&longitude=-79.9959&daily=rain_sum&current=rain&forecast_days=1&temperature_unit=fahrenheit");
