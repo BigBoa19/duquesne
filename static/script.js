@@ -112,7 +112,7 @@ function validate() {
         failed = true;
     }
     if(!name.checkValidity() || !email.checkValidity()){
-        validity.innerHTML = "Please fill out all required fields"
+        validity.innerHTML = "Please fill out all required fields correctly"
         failed = true;
     }
     
