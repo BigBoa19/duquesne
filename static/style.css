@@ -199,7 +199,7 @@ header nav a:hover {
 }
 
 .Title {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .video-map {
@@ -229,6 +229,12 @@ iframe {
 
 .carousel-container {
   width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-container2 {
+  width: 45%;
   margin: 0 auto;
   overflow: hidden;
 }

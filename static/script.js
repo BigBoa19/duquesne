@@ -102,11 +102,12 @@ function validate() {
         checkbox.checked = false;
         setTimeout(function(){
             validity.innerHTML = "";
-        }, 2000);
+        }, 4000);
     }
 }
 
 async function getWeather() {
+    // Get weather data from Open-Meteo API
     const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=40.4406&longitude=-79.9959&daily=rain_sum&current=rain&forecast_days=1&temperature_unit=fahrenheit");
     const data = await response.json();
     const rain = data.daily.rain_sum;

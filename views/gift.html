@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../static/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -27,24 +30,24 @@
     <!-- MAIN -->
     <main>
       <div class="container">
-        <h1 class="Title">Gift Shop Items</h1>
-        <div class="gift-container">
-          <h2>INCLINE WOODEN ORNAMENT</h2>
-          <img src="../static/ornament.jpg" alt="Incline Wooden Ornament" class="img1" />
+        <div class="carousel-container2">
+          <h1 class="Title">Gift Shop Items</h1>
+          <div class="carousel">
+            <div class="carousel-slide">
+              <img src="../static/ornament.jpg" alt="Gift item 1" />
+            </div>
+            <div class="carousel-slide">
+              <img src="../static/glasses.jpg" alt="Gift item 2" />
+            </div>
+            <div class="carousel-slide">
+              <img src="../static/bag.jpg" alt="Gift item 3" />
+            </div>
+            <div class="carousel-slide">
+              <img src="../static/plates.jpg" alt="Gift item 4" />
+            </div>
+          </div>
         </div>
-        <div class="gift-container">
-          <h2>INCLINE SHOT GLASSES</h2>
-          <img src="../static/glasses.jpg" alt="Incline Shot Glasses" class="img1" />
-        </div>
-        <div class="gift-container">
-          <h2>INCLINE METAL PLATES</h2>
-          <img src="../static/plates.jpg" alt="Incline Metal Plates" class="img1" />
-        </div>
-        
-        
-
-  
-      </div>     
+      </div>
     </main>
 
     <!-- FOOTER -->
@@ -66,22 +69,21 @@
       <div>
         <p>Subscribe to our Mailing List</p>
         <div class="horizontal-container">
-          <input placeholder="Name" id="name" type="name" required/>
-          <input placeholder="Email address" id="email" type="email" required/>
+          <input placeholder="Name" id="name" type="name" required />
+          <input placeholder="Email address" id="email" type="email" required />
         </div>
         <div class="horizontal-container">
-          <input placeholder="Phone" id="phone" type="phone"/>
-          <input placeholder="Zip Code" id="zip" type="zip"/>
+          <input placeholder="Phone" id="phone" type="phone" />
+          <input placeholder="Zip Code" id="zip" type="zip" />
         </div>
         <div class="checkbox-container">
-          <input type="checkbox" id="sms-checkbox" name="sms">
+          <input type="checkbox" id="sms-checkbox" name="sms" />
           <p>I would like to receive messages via SMS text</p>
         </div>
-        
+
         <button onclick="validate()">Subscribe</button>
         <p id="validity-msg"></p>
       </div>
     </footer>
   </body>
-  
 </html>
